@@ -1,0 +1,12 @@
+
+<head>
+	<title>StarMatch</title>
+</head>
+<body>
+	<form action="/handle/" method="post">
+		{% csrf_token %}
+    	<label for="twitter_handle">Your Twitter Handle: </label>
+    	<input id="twitter_handle" type="text" placeholder = "@twitter-handle" name="twitter_handle" value="{{ current_handle }}">
+    	<input type="submit" value="OK">
+	</form>
+</body>
